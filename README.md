@@ -1,6 +1,6 @@
 ## Real Estate Sales Analysis in New York City
 
-This project analyses real estate sales in New York City (USA) through data visualization, using a map, a histogram, and interactive elements that affect and filter the data for more specific analysis.
+This project analyses real estate sales in New York City (USA) through data visualization. It uses a map, a histogram, and interactive elements that affect and filter the data for more specific analysis.
 
 ### Overview
 
@@ -8,9 +8,9 @@ The project uses Pandas to read a .CSV file containing the data and cleans/treat
 
 ### Demo
 
-The dashboard was deployed using RENDER, and is available here: [Link to dashboard]
+The dashboard was deployed using RENDER, and is available here: [(https://ny-real-estate.onrender.com/)]
 
 ### Languages and Technologies Used
 
-* Languages: Python
+* Languages: Python, HTML, CSS (styling)
 * Technologies: Dash, Plotly, Pandas, Numpy, MapBox
