@@ -17,6 +17,7 @@ from components._controllers import controllers, slider_size
 #===================
 dotenv.load_dotenv()
 mapbox_key = os.getenv('MAPBOX_KEY')
+server = app.server
 #============================================#
 # DATA
 #============================================#
