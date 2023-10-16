@@ -15,16 +15,17 @@ locations_dict = {
 slider_size = [100, 500, 1000, 10000, 10000000]
 
 controllers = dbc.Row([
-    html.Img(id='logo', src=app.get_asset_url('logo_dark.png'), style={'width': '50%'}),
-    html.H3("Real Estate Sales - NYC", style={'margin': '30px'}),
+    html.Img(id='logo', src=app.get_asset_url('ny_logo.png'), style={'width': '100%', 'filter':'invert(1)'}),
+    html.H2("Real Estate Sales - New York City", style={'margin': '50px 0 30px'}),
     html.P('This dashboard was made for the visualization of property sales in New York City'),
-    html.Hr(),
-    html.H4("District", style={'margin': '50px auto 25px'}),
+    html.P('Select the district, square meter limit and the variable you want to analyse'),
+    html.Hr(style={'margin-top': '15px'}),
+    html.H4("District", style={'margin': '20px auto 25px'}),
     dcc.Dropdown(id='district-dropdown',
                  options=[{'value': i , 'label': j} for i,j in locations_dict.items()], 
                  value=0, clearable=False,
                  placeholder='Select a District'),
-    html.H4("Square feet", style={'margin': '30px auto'}),
+    html.H4("Square meters", style={'margin': '30px auto'}),
     dcc.Slider(
         id='square-ft-slider',
         min= 0,max=4, 

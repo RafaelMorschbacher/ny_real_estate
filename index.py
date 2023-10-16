@@ -135,7 +135,7 @@ def update__hist_map(location, variable, square_size_index):
 
         fig_map.update_layout(mapbox=dict(center=go.layout.mapbox.Center(lat=avg_lat, lon=avg_lon)), 
                 template="plotly_dark", paper_bgcolor="rgba(0, 0, 0, 0)", 
-                margin=go.layout.Margin(l=10, r=10, t=10, b=10),)
+                margin=go.layout.Margin(l=10, r=10, t=10, b=10))
 
         #=================== return outputs
         return [fig_histogram, fig_map]
@@ -143,4 +143,4 @@ def update__hist_map(location, variable, square_size_index):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
