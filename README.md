@@ -1,4 +1,4 @@
-## Real Estate Sales Analysis in New York City
+## Real Estate Sales Analysis in New York City - Python project
 
 This project analyses real estate sales in New York City (USA) through data visualization. It uses a map, a histogram, and interactive elements that affect and filter the data for more specific analysis.
 
